@@ -127,6 +127,7 @@ footer ul li a:hover {
     gap: 70px;
     padding-bottom: 50px;
 }
+
 .product {
     background-color: #f4f4f4;
     padding: 20px;
@@ -173,5 +174,112 @@ input{
     border-left: 3px solid;
 }
 
+.container p{
+    margin-bottom: 120px;
+}
+
+.containerServicio{
+    flex: 1;
+    text-align: center;
+
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column; /* Coloca el label sobre el textarea */
+    margin-bottom: 20px;    /* Espaciado inferior para separar los campos */
+}
+
+.form_input label {
+    font-weight: bold;     /* Resalta el texto del label */
+    margin-bottom: 10px;   /* Espaciado entre el label y el textarea */
+}
+
+#mensaje{
+    height: 50px;
+} 
+
+.btn {
+    display: inline-block;           /* Para que se comporte como un botón */
+    padding: 15px 30px;              /* Espaciado interno */
+    font-size: 1.2rem;               /* Tamaño de fuente */
+    color: #fff;                     /* Texto en blanco */
+    background-color: #6daaad;       /* Fondo azul */
+    border: none;                    /* Sin bordes */
+    border-radius: 50px;             /* Bordes redondeados */
+    text-align: center;              /* Texto centrado */
+    text-decoration: none;           /* Quitar el subrayado */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.btn:hover {
+    background-color: #4e7476;       /* Cambiar color de fondo al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Aumentar sombra al hacer hover */
+    transform: translateY(-3px);     /* Efecto de levantar el botón */
+}
+
+.btn:active {
+    background-color: #004085;       /* Cambiar color cuando el botón es presionado */
+    transform: translateY(0);        /* Efecto de presionado */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Reducir sombra cuando se presiona */
+}
+
+
+@media (max-width: 450px) {
+    
+    /* ESTO ES PARA INDEX */
+    header{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    #logo{
+        padding-top: 10px;
+    }
+
+    #logo2{
+        font-size: 40px;
+    }
+
+    header ul li {
+        margin: 0 6px;
+    }
+
+    #navegacion{
+        font-size: 15px;
+    }
+
+    /* .container{
+        max-width: fit-content;
+    }
+
+    .container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    } */
+
+    /* ESTO ES PARA PRODUCTOS */
+    #nav_producto {
+        padding-top: 20px;
+        grid-template-columns: repeat(1, 4fr);
+        grid-column: auto;
+        gap: 0;
+        padding-bottom: 0;
+    }
+
+    /* ESTO ES PARA NOSOTROS */
+    .container p{
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    ESTO ES PARA CONTACTO
+
+
+
+}
 
 
